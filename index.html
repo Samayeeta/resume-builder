@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resume-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="summary" placeholder="Summary"></textarea>
+            <textarea id="education" placeholder="Education"></textarea>
+            <textarea id="experience" placeholder="Experience"></textarea>
+
+            <div id="skills-container">
+                <label>Skills:</label>
+                <button type="button" id="add-skill">Add Skill</button>
+            </div>
+
+            <label for="theme">Select PDF Theme:</label>
+            <select id="theme">
+                <option value="light-blue">Light Blue</option>
+                <option value="dark">Dark</option>
+                <option value="green">Green</option>
+            </select>
+
+            <button type="submit">Generate Resume</button>
+            <button type="button" id="download-resume" style="display:none;">Download PDF</button>
+        </form>
+
+        <div id="resume-output"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4b9cd3;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    margin: 8px 0;
+    padding: 10px;
+    color: #fff;
+    background-color: #4b9cd3;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: #3a8db5;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#skills-container input {
+    margin-bottom: 8px;
+}
